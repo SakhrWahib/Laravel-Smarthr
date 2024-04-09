@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="{{asset('assets/css/line-awesome.min.css')}}">
 		<!-- Datetimepicker CSS -->
 		<link rel="stylesheet" href="{{asset('assets/css/bootstrap-datetimepicker.min.css')}}">
-		
+
 		<!-- Toastr Css -->
 		<link rel="stylesheet" href="{{asset('assets/plugins/toastr/toastr.min.css')}}">
 		<!-- Toastify css -->
@@ -36,27 +36,27 @@
     <body>
 		<!-- Main Wrapper -->
         <div class="main-wrapper">
-		
+
 			<!-- Header -->
             @include('includes.backend.header')
 			<!-- /Header -->
-			
+
 			<!-- Sidebar -->
             @include('includes.backend.sidebar')
 			<!-- /Sidebar -->
-			
+
 			<!-- Page Wrapper -->
             <div class="page-wrapper">
 				@yield('content_one')
 				<!-- Page Content -->
                 <div class="content container-fluid">
-					
+
 					<!-- Page Header -->
 					<div class="page-header">
 						@yield('page-header')
 					</div>
 					<!-- /Page Header -->
-					
+
 					@if ($errors->any())
 						<div class="alert alert-danger alert-dismissible fade show" role="alert">
 							@foreach($errors->all() as $error)
@@ -78,16 +78,16 @@
 					<!-- Content Starts -->
 						@yield('content')
 					<!-- /Content End -->
-					
+
                 </div>
 				<!-- /Page Content -->
-				
+
             </div>
 			<!-- /Page Wrapper -->
         </div>
 		<!-- /Main Wrapper -->
-		
-		
+
+
     </body>
 	<!-- jQuery -->
 	<script src="{{asset('assets/plugins/jquery/jquery.min.js')}}"></script>
@@ -122,23 +122,23 @@
                     case 'info':
                         toastr.info("{{ Session::get('message') }}");
                         break;
-                    
+
                     case 'success':
                         toastr.success("{{ Session::get('message') }}");
                         break;
-                    
+
                     case 'warning':
                         toastr.warning("{{ Session::get('message') }}");
                         break;
-                    
+
                     case 'error':
                         toastr.error("{{ Session::get('message') }}");
                         break;
-                    
+
                     case 'danger':
                         toastr.error("{{ Session::get('message') }}");
                         break;
-                    
+
                 }
             @endif
 		});

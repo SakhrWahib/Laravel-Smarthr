@@ -100,6 +100,14 @@ http://127.0.0.1:8000
  email: admin@admin.com
  password: admin
 ```
+# RESTful APIs
+
+You can access the RESTful APIs of this project through the following endpoints:
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/32834455-874406f5-8d36-4c7c-80e2-c4f90b63f12f?action=collection%2Ffork&collection-url=entityId%3D32834455-874406f5-8d36-4c7c-80e2-c4f90b63f12f%26entityType%3Dcollection%26workspaceId%3D85d35658-799e-4cf3-bf61-83319ad0cb76)
+
+You can find the complete documentation and test the APIs using Postman by clicking on the "Run in Postman" button above.
+
 
 #screenshots
 
